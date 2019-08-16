@@ -1,3 +1,3 @@
 export class FirestoreCollections {
-    public static EXAMPLES_KEY = "itl_examples";
+    public static SAMPLES_KEY = "itl_samples";
 }
