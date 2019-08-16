@@ -8,7 +8,8 @@ import rolesConfig from "./roles.config";
 describe("RoleKey", () => {
     it("All roles match configuration", () => {
         FirestoreRolesConfiguration.isAllowedRole(rolesConfig, RoleKey.admin);
-        FirestoreRolesConfiguration.isAllowedRole(rolesConfig, RoleKey.medicalprofessional);
         FirestoreRolesConfiguration.isAllowedRole(rolesConfig, RoleKey.provisioner);
+        FirestoreRolesConfiguration.isAllowedRole(rolesConfig, RoleKey.recorder);
+        FirestoreRolesConfiguration.isAllowedRole(rolesConfig, RoleKey.labeller);
     });
 });
