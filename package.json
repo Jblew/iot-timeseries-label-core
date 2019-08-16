@@ -40,12 +40,32 @@
         "tslint": "^5.12.0",
         "typescript": "^3.5.3"
     },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ],
+        "rules": {
+            "header-max-length": [
+                0
+            ],
+            "scope-case": [
+                0
+            ]
+        }
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "release": {},
     "repository": {
         "type": "git",
         "url": "https://github.com/Jblew/iot-timeseries-label-core"
     },
     "keywords": [
-        "iot", "machine-learning"
+        "iot",
+        "machine-learning"
     ],
     "author": "Jędrzej Lewandowski <jedrzejblew@gmail.com> (https://jedrzej.lewandowski.doctor/)",
     "contributors": [
